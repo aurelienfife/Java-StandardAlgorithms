@@ -1,5 +1,8 @@
 package stdalg;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class StdAlg {
 
 	// Global: some data used in the algorithms
@@ -23,7 +26,7 @@ public class StdAlg {
 				minValue = scores[i];
 			}
 		}
-		System.out.println(scores.toString());
+		System.out.println(Arrays.toString(scores));
 		System.out.println("The minimum is: " + minValue);
 	}
 
@@ -35,7 +38,7 @@ public class StdAlg {
 				maxValue = scores[i];
 			}
 		}
-		System.out.println(scores.toString());
+		System.out.println(Arrays.toString(scores));
 		System.out.println("The maximum is: " + maxValue);
 	}
 
@@ -50,8 +53,8 @@ public class StdAlg {
 			}
 		}
 
-		System.out.println(fruits.toString());
-		System.out.print(term);
+		System.out.println(Arrays.toString(fruits));
+		System.out.println(term);
 		System.out.println(count + " occurrence(s).");
 	}
 }
